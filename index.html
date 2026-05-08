@@ -32,9 +32,10 @@
 
         /* الهيدر والعداد المطور */
         .header-section {
-            height: 100vh; display: flex; flex-direction: column;
+            min-height: 100vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center;
             background: radial-gradient(circle, rgba(255,77,109,0.1) 0%, rgba(0,0,0,1) 70%);
+            text-align: center;
         }
 
         .counter-box {
@@ -94,7 +95,7 @@
     <div id="lock-screen">
         <h2 style="color: var(--pink); margin-bottom: 20px;">🔒 عالم نينووو الخاص</h2>
         <input type="text" id="passInput" placeholder="اكتبي كلمة السر...">
-        <button class="btn" style="margin-top: 20px;" onclick="checkPassword()">دوسي هنا ي ام حورر  ❤️</button>
+        <button class="btn" style="margin-top: 20px;" onclick="checkPassword()">دوسي هنا ي ام حورر ❤️</button>
         <p id="error" style="color: #ff4d6d; display: none; margin-top: 15px;">الكلمة غلط يا بطوطة 😉</p>
     </div>
 
@@ -106,34 +107,19 @@
                 <div class="counter-unit"><span id="minutes" class="days-number">0</span><span class="unit-label">دقيقة</span></div>
                 <div class="counter-unit"><span id="seconds" class="days-number">0</span><span class="unit-label">ثانية</span></div>
             </div>
-            <p style="max-width: 80%; line-height: 1.8; font-size: 1.1rem; text-align: center;">ده عداد من اول صوره كانت ع موبايلي ليكي من ساعتهاوصورتك ف عقلي هيفضل العداد ده مكمل زي ما حبي ليكي مكمل انتي مش بس حبيبتي، انتي بنتي وأمي وصحبتي وحياتي كلها.. كل يوم وانتي معايا هو عيد."</p>
+            <p style="max-width: 80%; line-height: 1.8; font-size: 1.1rem;">ده عداد من اول صوره كانت ع موبايلي ليكي من ساعتها وصورتك ف عقلي هيفضل العداد ده مكمل زي ما حبي ليكي مكمل انتي مش بس حبيبتي، انتي بنتي وأمي وصحبتي وحياتي كلها.. كل يوم وانتي معايا هو عيد."</p>
             <p style="color: var(--soft-pink); margin-top: 20px;">انزلي تحت تشوفي حكايتنا 👇</p>
         </div>
 
         <div class="gallery-container">
-            <div class="photo-card">
-                <img src="https://i.postimg.cc/bNGSjKxD/Whats-App-Image-2026-02-13-at-10-51-06-PM.jpg" alt="ذكرى 1">
-                <div class="photo-desc">هنا هنعدلعها قدم بس هتكون جمبها بجد  ❤️</div>
-            </div>
-
-            <div class="photo-card">
-                <img src="https://i.postimg.cc/k4rfxQnd/Whats-App-Image-2026-02-13-at-10-34-44-PM-(2).jpg" alt="ذكرى 2">
-                <div class="photo-desc">شاتنا هنا واثق هنقعد نضحك عليه ونسرح ونقول ياااه كنا بنتكلم ع الاستوري ودلوقتي انت معايا كل لحظه ✨</div>
-            </div>
-
-            <div class="photo-card">
-                <img src="https://i.postimg.cc/G3Kx2wTX/Whats-App-Image-2026-02-13-at-10-34-45-PM.jpg" alt="ذكرى 3">
-                <div class="photo-desc">بحب دلعي اوي منك كتكوتي بقي كوكو كوتي المهم انها منك  🌸</div>
-            </div>
-
-            <div class="photo-card">
-                <img src="https://i.postimg.cc/gcg3pVfP/Whats-App-Image-2026-02-13-at-10-34-46-PM.jpg" alt="ذكرى 4">
-                <div class="photo-desc">وده جزء من شاتنا وحبنا لبعض اللي ول هيكفي مليون ويب عشان اوصفه كل عيد حب واحنا مع بعض يا روحي 💑</div>
-            </div>
+            <div class="photo-card"><img src="https://i.postimg.cc/bNGSjKxD/Whats-App-Image-2026-02-13-at-10-51-06-PM.jpg" alt="ذكرى 1"><div class="photo-desc">هنا هنعدلها قدام بس هنكون جمبها بجد ❤️</div></div>
+            <div class="photo-card"><img src="https://i.postimg.cc/k4rfxQnd/Whats-App-Image-2026-02-13-at-10-34-44-PM-(2).jpg" alt="ذكرى 2"><div class="photo-desc">شاتنا هنا واثق هنقعد نضحك عليه ونسرح ونقول ياااه كنا بنتكلم ع الاستوري ودلوقتي انت معايا كل لحظه ✨</div></div>
+            <div class="photo-card"><img src="https://i.postimg.cc/G3Kx2wTX/Whats-App-Image-2026-02-13-at-10-34-45-PM.jpg" alt="ذكرى 3"><div class="photo-desc">بحب دلعي اوي منك كتكوتي بقي كوكو كوتي المهم انها منك 🌸</div></div>
+            <div class="photo-card"><img src="https://i.postimg.cc/gcg3pVfP/Whats-App-Image-2026-02-13-at-10-34-46-PM.jpg" alt="ذكرى 4"><div class="photo-desc">وده جزء من شاتنا وحبنا لبعض اللي مش هيكفي مليون ويب عشان اوصفه كل عيد حب واحنا مع بعض يا روحي 💑</div></div>
         </div>
 
         <div class="music-player">
-            <button class="btn" id="musicBtn" onclick="togglePlay()">الاغنيه المقربه الي قلبيلما بسمعها بيكون كل كلمه كانك انت اللي بتقوليها  🎵</button>
+            <button class="btn" id="musicBtn" onclick="togglePlay()">شغلي لحننا 🎵</button>
         </div>
     </div>
 
@@ -146,7 +132,10 @@
         const START_DATE = "2025-02-01"; 
 
         function checkPassword() {
-            const input = document.getElementById("passInput").value;
+            let input = document.getElementById("passInput").value;
+            // تحويل الأرقام العربية إلى إنجليزية لضمان الدخول
+            input = input.replace(/[٠-٩]/g, d => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+            
             if (input === PASSWORD) {
                 document.getElementById("lock-screen").style.opacity = "0";
                 setTimeout(() => {
@@ -164,38 +153,26 @@
             const start = new Date(START_DATE);
             const now = new Date();
             const diff = now - start;
-
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
             const minutes = Math.floor((diff / (1000 * 60)) % 60);
             const seconds = Math.floor((diff / 1000) % 60);
-
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
         }
 
         function startEverything() {
-            // تحديث العداد فوراً وكل ثانية
             updateCounter();
             setInterval(updateCounter, 1000);
-
-            // تشغيل انيميشن القلوب
             setInterval(createHearts, 500);
-
-            // تفعيل انيميشن ظهور الصور عند السكرول
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
                 });
             }, { threshold: 0.1 });
-
-            document.querySelectorAll('.photo-card').forEach(card => {
-                observer.observe(card);
-            });
+            document.querySelectorAll('.photo-card').forEach(card => observer.observe(card));
         }
 
         function togglePlay() {
